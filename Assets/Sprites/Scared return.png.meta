@@ -104,18 +104,39 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 32
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8f8ecd5979200bef0800000000000000
-      internalID: -94572742097180424
+      spriteID: 1bd09c6ad0b42b8498e891306bd85cae
+      internalID: 1910440659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared return_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b837babcadea994cabfbd937f688d90
+      internalID: -602203347
       vertices: []
       indices: 
       edges: []
@@ -123,14 +144,16 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f9e7e5bbd92001843bee1366d7ab9fc7
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Scared return_0: 1910440659
+      Scared return_1: -602203347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

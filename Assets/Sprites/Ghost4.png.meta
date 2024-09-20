@@ -1,10 +1,58 @@
 fileFormatVersion: 2
-guid: c786c7d1b68d4d34c8ff7eb8adbeae42
+guid: 708fb28e49779b847afe48e217114479
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 6934459625036600529
     second: Ghost4_0
+  - first:
+      213: -6844897928322655455
+    second: Ghost4_1
+  - first:
+      213: 1228682175446269489
+    second: Ghost4_2
+  - first:
+      213: -7679162028417984851
+    second: Ghost4_3
+  - first:
+      213: -7173621497735317960
+    second: Ghost4_4
+  - first:
+      213: 2306234932494638038
+    second: Ghost4_5
+  - first:
+      213: 139508508872857018
+    second: Ghost4_6
+  - first:
+      213: 7318516278999364882
+    second: Ghost4_7
+  - first:
+      213: 5630947844974662227
+    second: Ghost4_8
+  - first:
+      213: -2835742770680150547
+    second: Ghost4_9
+  - first:
+      213: -4709664039905462510
+    second: Ghost4_10
+  - first:
+      213: 2656007297882420204
+    second: Ghost4_11
+  - first:
+      213: -5759473781724631304
+    second: Ghost4_12
+  - first:
+      213: -8763658516907680183
+    second: Ghost4_13
+  - first:
+      213: 3601917042878063743
+    second: Ghost4_14
+  - first:
+      213: 1075472421544338735
+    second: Ghost4_15
+  - first:
+      213: -8076137249366843648
+    second: Ghost4_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,19 +151,355 @@ TextureImporter:
       name: Ghost4_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 0
-        width: 20
+        x: 0
+        y: 128
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1d45893e9462c3060800000000000000
-      internalID: 6934459625036600529
+      spriteID: 5777eb95706cda940ab41d472a1f9803
+      internalID: 1972987236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9a222e582c76d46adebe69d783558a
+      internalID: 1047207382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766316f0323d72649bad3d7c311ef6f7
+      internalID: 1133683102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7a0ec84b81b3240958997546dc2051
+      internalID: -898145601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565be64e72f660b479318bacb66a2b70
+      internalID: 529267310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12d20b64aa570d4f886e88547a486cb
+      internalID: 193451209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15fe538366ca7b4fbe948759cfc557e
+      internalID: -2051824674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bc0769c1147964d85ad45f1a5a528d
+      internalID: 565398656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0cedde1acd134c438a6e41c9164a72b
+      internalID: 1006613507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd2c166f446db64783bace3e44a2d4e
+      internalID: 1914864255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd9df8d160e95940a5f03699e245cd6
+      internalID: -20471293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcee005163691442b89f352d7e39f12
+      internalID: 1312619166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48b2f37cff9a4345a209b5611fa1a8c
+      internalID: -1712938032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34a04aed9770b14ba2b5c82afd5e551
+      internalID: 1562651070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36a96e780e2c8043ae5af5848e0987c
+      internalID: -1181423911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca706837f82eba4a8e051ad1fe0b4ca
+      internalID: 852130447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost4_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74ef760809c2ed449a4681b17eb88a2
+      internalID: -1927366652
       vertices: []
       indices: 
       edges: []
@@ -123,14 +507,31 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7dbfb677f31011a4790242ae1f68adf5
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ghost4_0: 1972987236
+      Ghost4_1: 1047207382
+      Ghost4_10: -20471293
+      Ghost4_11: 1312619166
+      Ghost4_12: -1712938032
+      Ghost4_13: 1562651070
+      Ghost4_14: -1181423911
+      Ghost4_15: 852130447
+      Ghost4_16: -1927366652
+      Ghost4_2: 1133683102
+      Ghost4_3: -898145601
+      Ghost4_4: 529267310
+      Ghost4_5: 193451209
+      Ghost4_6: -2051824674
+      Ghost4_7: 565398656
+      Ghost4_8: 1006613507
+      Ghost4_9: 1914864255
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -106,19 +106,19 @@ TextureImporter:
       name: Power UP flash_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 33
-        width: 30
-        height: 30
+        x: 2
+        y: 34
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3b71b90b2d4d0cee0800000000000000
-      internalID: -1242759495783082061
+      spriteID: c356b32f09583424a8f58fcc6d39a00f
+      internalID: -1350774024
       vertices: []
       indices: 
       edges: []
@@ -127,19 +127,19 @@ TextureImporter:
       name: Power UP flash_1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 30
-        height: 31
+        x: 2
+        y: 2
+        width: 28
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 671b5ed6af5d6d730800000000000000
-      internalID: 4023638588664426870
+      spriteID: 9dd7f1ec784f7884589458cc06bc837b
+      internalID: -2025706253
       vertices: []
       indices: 
       edges: []
@@ -147,14 +147,16 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 86f0831432ca1224db91b18fc2c6a0a0
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Power UP flash_0: -1350774024
+      Power UP flash_1: -2025706253
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

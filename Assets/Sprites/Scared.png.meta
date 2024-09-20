@@ -103,19 +103,19 @@ TextureImporter:
       name: Scared_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 22
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6f0df996d42194650800000000000000
-      internalID: 6217520884255543542
+      spriteID: 71c011a1db7ad0440af66d2153619f26
+      internalID: 552681875
       vertices: []
       indices: 
       edges: []
@@ -123,14 +123,15 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ba47e8bcca3184d40af077c1d3fd80bd
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Scared_0: 552681875
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

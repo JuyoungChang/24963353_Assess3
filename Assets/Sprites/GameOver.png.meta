@@ -1,58 +1,61 @@
 fileFormatVersion: 2
-guid: 8d136bd45f32ab84494152a9f31ce255
+guid: 9e104e1195eba8d4d9b053848c3fc9e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4456494643849357012
-    second: Ghost2_0
+      213: -6899527831451061053
+    second: GameOver_0
   - first:
-      213: 3121428337503046408
-    second: Ghost2_1
+      213: 4804125648906539500
+    second: GameOver_1
   - first:
-      213: 1718542219335147448
-    second: Ghost2_2
+      213: -263511437403757397
+    second: GameOver_2
   - first:
-      213: 7097665056062617683
-    second: Ghost2_3
+      213: -7739051205162100772
+    second: GameOver_3
   - first:
-      213: 5592075206520912096
-    second: Ghost2_4
+      213: -7782269141841453749
+    second: GameOver_4
   - first:
-      213: -6665610855502669534
-    second: Ghost2_5
+      213: 2417089973929048815
+    second: GameOver_5
   - first:
-      213: 5052587776663608175
-    second: Ghost2_6
+      213: -8195210154822383127
+    second: GameOver_6
   - first:
-      213: -327402982667466286
-    second: Ghost2_7
+      213: -7558324183008474240
+    second: GameOver_7
   - first:
-      213: 8222923716461480146
-    second: Ghost2_8
+      213: -1185959544606132088
+    second: GameOver_8
   - first:
-      213: 2913610505845031253
-    second: Ghost2_9
+      213: -7552614211545945939
+    second: GameOver_9
   - first:
-      213: 8454534911343499619
-    second: Ghost2_10
+      213: 7735156139549313678
+    second: GameOver_10
   - first:
-      213: 5911350265465881252
-    second: Ghost2_11
+      213: -2663294863570472342
+    second: GameOver_11
   - first:
-      213: -6438190198526846089
-    second: Ghost2_12
+      213: 818445690385862368
+    second: GameOver_12
   - first:
-      213: -4152033253900775828
-    second: Ghost2_13
+      213: -9005477732774934475
+    second: GameOver_13
   - first:
-      213: -6348927177316733641
-    second: Ghost2_14
+      213: -3525340300641352411
+    second: GameOver_14
   - first:
-      213: 7588752896495701736
-    second: Ghost2_15
+      213: 8409338231894736333
+    second: GameOver_15
   - first:
-      213: -8535748621431433786
-    second: Ghost2_16
+      213: 143219546712210710
+    second: GameOver_16
+  - first:
+      213: -6449702336915408398
+    second: GameOver_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -148,7 +151,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ghost2_0
+      name: GameOver_0
       rect:
         serializedVersion: 2
         x: 0
@@ -156,20 +159,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f9d8bb9546a855469de25e5d53b52fa
-      internalID: 1593426338
+      spriteID: 1fb76b342fb144444a2bc9ba012dcfd4
+      internalID: 1913720171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_1
+      name: GameOver_1
       rect:
         serializedVersion: 2
         x: 32
@@ -177,20 +180,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fb17015206b0a945a2929e2f031a071
-      internalID: 395648384
+      spriteID: a607e56e3932ec74092aa368511e145d
+      internalID: -2141675812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_2
+      name: GameOver_2
       rect:
         serializedVersion: 2
         x: 64
@@ -198,20 +201,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c07f0899b34baf143afe28010b6e502b
-      internalID: 1397147336
+      spriteID: d11f1cda9331e2b42bded30c87b97a25
+      internalID: -1530202702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_3
+      name: GameOver_3
       rect:
         serializedVersion: 2
         x: 96
@@ -219,20 +222,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fe8e12db292cbb47bb06e2ffea5e9a4
-      internalID: -1091101884
+      spriteID: 11aa05a8451a8e14ab98002d7ff41c28
+      internalID: -46173580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_4
+      name: GameOver_4
       rect:
         serializedVersion: 2
         x: 0
@@ -240,20 +243,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e44d15a10ecc4ea4084cb8e7f9a17007
-      internalID: -525497959
+      spriteID: 03bb8000e72d81b4a89bda0c137e0754
+      internalID: -1204182723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_5
+      name: GameOver_5
       rect:
         serializedVersion: 2
         x: 32
@@ -261,20 +264,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8caafadf195c9a44aa6dbb03710c50ee
-      internalID: -892926060
+      spriteID: 176e2a7153f04a74cb7d0c68933c1418
+      internalID: 2076571389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_6
+      name: GameOver_6
       rect:
         serializedVersion: 2
         x: 64
@@ -282,20 +285,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b43bb86babc00bd4d8f60624d4bf66bd
-      internalID: -1160454655
+      spriteID: e5772e72d9e558d4fb6afebb6c029f08
+      internalID: -632429082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_7
+      name: GameOver_7
       rect:
         serializedVersion: 2
         x: 96
@@ -303,20 +306,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a100af0dbc7ed5d46a5be4c340dd4433
-      internalID: -95765501
+      spriteID: ca06a1c0621b95847a03192a7ed14b12
+      internalID: -856403050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_8
+      name: GameOver_8
       rect:
         serializedVersion: 2
         x: 0
@@ -324,20 +327,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e17ffae760fd024d922e7a6c6ccee4d
-      internalID: 41837230
+      spriteID: bc50c461adcea17429aa2ddbb53701a5
+      internalID: 1898251004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_9
+      name: GameOver_9
       rect:
         serializedVersion: 2
         x: 32
@@ -345,20 +348,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbf9a56c0d096464a99bca9d3fe1c8a8
-      internalID: -1927820723
+      spriteID: 8c7cc5e85b624db45adf71101b3f6639
+      internalID: 2019954589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_10
+      name: GameOver_10
       rect:
         serializedVersion: 2
         x: 64
@@ -366,20 +369,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fa6f97b971cf084d9a8a0a86efd868f
-      internalID: -1360888466
+      spriteID: a9b5456cf7d97254fb93fd4458ae8eb2
+      internalID: -1598229253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_11
+      name: GameOver_11
       rect:
         serializedVersion: 2
         x: 96
@@ -387,20 +390,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 381b9e8195281f04da7662231b40125e
-      internalID: -104910722
+      spriteID: fc3889f80bd48a14d965a98f17437a4e
+      internalID: 1284152307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_12
+      name: GameOver_12
       rect:
         serializedVersion: 2
         x: 0
@@ -408,20 +411,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 690e81e32ab19a64a87d90e7a9448b19
-      internalID: 538866260
+      spriteID: 30a5b49059c330646a6e4987581d4e70
+      internalID: 111339705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_13
+      name: GameOver_13
       rect:
         serializedVersion: 2
         x: 32
@@ -429,20 +432,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ccfe50dd6dd37b45b3c75dacddc33b4
-      internalID: 1199357261
+      spriteID: ca9060bb28211574186a5e3c18f47464
+      internalID: -1491875206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_14
+      name: GameOver_14
       rect:
         serializedVersion: 2
         x: 64
@@ -450,20 +453,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01afd9809a35ebb429375e7ebd7bd151
-      internalID: -387572848
+      spriteID: 56fc94f2819bcad4c985e010fd7b8f43
+      internalID: -969258886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_15
+      name: GameOver_15
       rect:
         serializedVersion: 2
         x: 96
@@ -471,20 +474,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2648cc7ba0dbfe44ea72244ca0e12102
-      internalID: 617830412
+      spriteID: 39d351eda6e1faa49ad04a05c462f88e
+      internalID: -430930724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ghost2_16
+      name: GameOver_16
       rect:
         serializedVersion: 2
         x: 0
@@ -492,14 +495,77 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcf2940e333a8c2429ee11ea2d54f02b
-      internalID: 1538765906
+      spriteID: 8b5c6f84b46e4964991e2df6d6ae7496
+      internalID: 1941036923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2335b16e793d7194c8cf238dbdba2f96
+      internalID: 142217130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982a29119bce023419119874d9936f9b
+      internalID: -353500812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameOver_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f31a1af42a1444ea03791bf61cbf08
+      internalID: 671875452
       vertices: []
       indices: 
       edges: []
@@ -507,7 +573,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f912950f99b240242ae095d00775bf79
+    spriteID: 0efa4839cc4745646b525ec99a456845
     internalID: 0
     vertices: []
     indices: 
@@ -515,23 +581,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ghost2_0: 1593426338
-      Ghost2_1: 395648384
-      Ghost2_10: -1360888466
-      Ghost2_11: -104910722
-      Ghost2_12: 538866260
-      Ghost2_13: 1199357261
-      Ghost2_14: -387572848
-      Ghost2_15: 617830412
-      Ghost2_16: 1538765906
-      Ghost2_2: 1397147336
-      Ghost2_3: -1091101884
-      Ghost2_4: -525497959
-      Ghost2_5: -892926060
-      Ghost2_6: -1160454655
-      Ghost2_7: -95765501
-      Ghost2_8: 41837230
-      Ghost2_9: -1927820723
+      GameOver_0: 1913720171
+      GameOver_1: -2141675812
+      GameOver_10: -1598229253
+      GameOver_11: 1284152307
+      GameOver_12: 111339705
+      GameOver_13: -1491875206
+      GameOver_14: -969258886
+      GameOver_15: -430930724
+      GameOver_16: 1941036923
+      GameOver_17: 142217130
+      GameOver_18: -353500812
+      GameOver_19: 671875452
+      GameOver_2: -1530202702
+      GameOver_3: -46173580
+      GameOver_4: -1204182723
+      GameOver_5: 2076571389
+      GameOver_6: -632429082
+      GameOver_7: -856403050
+      GameOver_8: 1898251004
+      GameOver_9: 2019954589
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
