@@ -10,28 +10,18 @@ public class PacStudentMovement : MonoBehaviour
 {
     public float movingSpeed = 0.2f;
     public  AudioSource movingMan;//chunjat!
-    public Transform[] coordinates;
+    public Vector2[] coordinates = {
+        new Vector2(-10.5f, -0.5f), new Vector2(-10.5f, 3.5f), new Vector2(-5.5f, 3.5f), new Vector2(-5.5f, -0.5f)
+    };
+    private Vector2 target;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(MoveMan());
+        
     }
 
-    IEnumerator MoveMan(){
-        while(true){
-            Vector3 startWichi = transform.position;
-            Vector3 endWichi =  coordinates[0].position;
 
-            float distanceTraveled = Vector2.Distance(startWichi, endWichi);
-            float traveledTime = distanceTraveled/movingSpeed;
-            float passedTime = 0f;
-
-            transform.position = Vector2.Lerp(startWichi, endWichi, passedTime/traveledTime);
-            passedTime += Time.deltaTime;
-            yield return null;
-        }
-    }
 
     // Update is called once per frame
     void Update()
