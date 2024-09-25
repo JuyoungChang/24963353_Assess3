@@ -8,19 +8,27 @@ using System.ComponentModel;
 
 public class PacStudentMovement : MonoBehaviour
 {
-    public float movingSpeed = 0.2f;
-    private AudioSource movingMan;//chunjat!
-    public AudioClip clip;
+    public float movingSpeed = 0.05f;
+    private AudioSource movingSource;
+    public AudioClip movingClip;
     private Vector2[] coordinates;
 
     private Vector2 target;
     private float time = 0f;
     private int point = 0;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        movingMan = GetComponent<AudioSource>();
+        movingSource = gameObject.AddComponent<AudioSource>();
+        movingSource.clip = movingClip;
+        movingSource.loop = true;
+        movingSource.pitch= 1.5f;
+        movingSource.Play();
+       
+       animator = GetComponent<Animator>();
+
         coordinates = new Vector2[]
         {
              new Vector2(-10.5f, -0.5f), new Vector2(-10.5f, 3.5f), new Vector2(-5.5f, 3.5f), new Vector2(-5.5f, -0.5f)
@@ -34,6 +42,8 @@ public class PacStudentMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         time += Time.deltaTime * movingSpeed / Vector2.Distance(transform.position, target);
         transform.position = Vector2.Lerp(transform.position, target, time);
 
