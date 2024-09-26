@@ -12,8 +12,8 @@ public class PacStudentMovement : MonoBehaviour
     private AudioSource movingSource;
     public AudioClip movingClip;
     private Vector2[] coordinates;
-
     private Vector2 target;
+    private Vector2 direction;
     private float time = 0f;
     private int point = 0;
     public Animator animator;
@@ -42,7 +42,8 @@ public class PacStudentMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        direction = target -(Vector2)transform.position;
+        AnimationByDirection();
 
         time += Time.deltaTime * movingSpeed / Vector2.Distance(transform.position, target);
         transform.position = Vector2.Lerp(transform.position, target, time);
@@ -58,4 +59,24 @@ public class PacStudentMovement : MonoBehaviour
             time = 0f;
         }
     }
+
+    private void AnimationByDirection(){
+        if (direction.y > 0 && direction.y >= direction.x && direction.y >= -direction.x)
+        {
+            animator.SetInteger("Direction", 1);  
+        }
+        else if (direction.y < 0 && direction.y <= direction.x && direction.y <= -direction.x)
+        {
+            animator.SetInteger("Direction", 2);  
+        }
+        else if (direction.x > 0)
+        {
+            animator.SetInteger("Direction", 4);  
+        }
+        else if (direction.x < 0)
+        {
+            animator.SetInteger("Direction", 3);  
+        }
+    }
+
 }
