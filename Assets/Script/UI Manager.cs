@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     private float timer;
     void Start()
     {
-        ScoreText.text = "Score:" + 0;
+        //ScoreText.text = "Score:" + 0;
     }
 
     // Update is called once per frame
