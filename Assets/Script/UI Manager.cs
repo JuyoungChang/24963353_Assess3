@@ -6,14 +6,14 @@ using UnityEngine.UI;
 using TMPro;
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
     private int score;
     private Text ScoreText;
     [SerializeField]private float timer;
-
+    [SerializeField]private float ghostScaredDuration = 30f;
     [SerializeField]private int minutes;
     [SerializeField]private int seconds;
     [SerializeField]private int mSeconds;
+    [SerializeField]private bool countdown;
     [SerializeField]private TextMeshProUGUI timerText;
     void Start()
     {
@@ -29,6 +29,10 @@ public class UIManager : MonoBehaviour
     {
         SceneManager.LoadScene("Level1");
     }
+    public void Exit()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
     public void ScoreAdd()
     {
         score++;
@@ -36,7 +40,25 @@ public class UIManager : MonoBehaviour
 
     public void InGameTimer()
     {
-        timer += Time.deltaTime;
+        if(timerText == null)
+        {
+            return;
+        }
+        if(countdown && ghostScaredDuration > 0 )
+        {
+            timer -= Time.deltaTime;
+            if(timer <= 0)
+            {
+                timer = 0;
+                timerText.text = "00:00:00";
+                timerText.gameObject.SetActive(false);
+                return;
+            }
+        }
+        else if(!countdown)
+        {
+            timer += Time.deltaTime;
+        }
         minutes = (int)(timer / 60f);
         seconds = (int)(timer % 60 );
         mSeconds = (int)((timer - (minutes * 60 + seconds)) * 1000);

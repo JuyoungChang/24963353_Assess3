@@ -1546,6 +1546,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0313c2e205c1cad44b7b853da075b2be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 0
+  ghostScaredDuration: 30
+  minutes: 0
+  seconds: 0
+  mSeconds: 0
+  countdown: 0
+  timerText: {fileID: 0}
 --- !u!4 &796621889
 Transform:
   m_ObjectHideFlags: 0
