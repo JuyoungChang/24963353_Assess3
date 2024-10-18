@@ -8153,8 +8153,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1375784592}
   - component: {fileID: 1375784591}
-  - component: {fileID: 1375784590}
   - component: {fileID: 1375784593}
+  - component: {fileID: 1375784594}
   m_Layer: 0
   m_Name: Pacstudent_0
   m_TagString: Untagged
@@ -8162,21 +8162,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1375784590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1375784589}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f0edf89b8c03ba42b1919eefc340f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movingSpeed: 0.02
-  movingClip: {fileID: 8300000, guid: 98edf50f8b76dbd4db8351db3c64dbd6, type: 3}
-  animator: {fileID: 1375784593}
 --- !u!212 &1375784591
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8268,6 +8253,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1375784594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375784589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32d3ea4f1c8cae4787ba1b08d65b8e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLerping: 0
+  lastInput: {x: 0, y: 0}
+  currentInput: {x: 0, y: 0}
+  movingSoundClip: {fileID: 8300000, guid: 98edf50f8b76dbd4db8351db3c64dbd6, type: 3}
+  eatingClip: {fileID: 0}
 --- !u!1 &1409230621
 GameObject:
   m_ObjectHideFlags: 0
