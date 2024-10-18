@@ -14,6 +14,7 @@ public class PacStudentController : MonoBehaviour
     private AudioSource eatingSound;
     public AudioClip eatingClip;
     private Animator movingAnimataor;
+    private ParticleSystem particle;
     
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,9 @@ public class PacStudentController : MonoBehaviour
         eatingSound.clip = eatingClip;
 
         movingAnimataor = GetComponent<Animator>();
+        particle = GetComponent<ParticleSystem>();
+
+        particle.Stop();
     }
 
     // Update is called once per frame
@@ -67,6 +71,7 @@ public class PacStudentController : MonoBehaviour
     private IEnumerator Movement(Vector2 target)
     {
         movingSound.Play();
+        particle.Play();
         isLerping = true;
         Vector2 start = transform.position;
         float elapsed = 0;
@@ -78,38 +83,15 @@ public class PacStudentController : MonoBehaviour
         }
         transform.position = target;
         isLerping =false;
+        particle.Stop();
     }
 
     public void PacSutdentAnmimation()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        /*
-        if(Input.GetKey("w") && !isLerping)
-        {
-            lastInput = Vector2.up;
-            vertical = 1f;
-        }
-        else if(Input.GetKey("s") && !isLerping)
-        {
-           lastInput = Vector2.down;
-           vertical = -1f;
-        }
-        if(Input.GetKey("a") && !isLerping)
-        {
-           lastInput = Vector2.left;
-           horizontal = -1f;
-        }
-        else if(Input.GetKey("d") && !isLerping)
-        {
-           lastInput = Vector2.right;
-           horizontal = 1f;
-        }
-        Debug.Log("x" + horizontal + vertical);
-        */
+
         movingAnimataor.SetFloat("Horizontal", horizontal);
         movingAnimataor.SetFloat("Vertical", vertical);
     }
-
-
 }

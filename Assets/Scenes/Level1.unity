@@ -8269,7 +8269,7 @@ MonoBehaviour:
   lastInput: {x: 0, y: 0}
   currentInput: {x: 0, y: 0}
   movingSoundClip: {fileID: 8300000, guid: 98edf50f8b76dbd4db8351db3c64dbd6, type: 3}
-  eatingClip: {fileID: 0}
+  eatingClip: {fileID: 8300000, guid: 8d41be074b0d5184bb079dca08496829, type: 3}
 --- !u!1 &1409230621
 GameObject:
   m_ObjectHideFlags: 0
