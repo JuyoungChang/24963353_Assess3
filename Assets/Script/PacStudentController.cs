@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PacStudentController : MonoBehaviour
@@ -8,10 +8,14 @@ public class PacStudentController : MonoBehaviour
     public bool isLerping = false;
     public Vector2 lastInput = Vector2.zero;
     public Vector2 currentINput = Vector2.zero;
+    private AudioSource movingSound;
+    public AudioClip movingSoundClip;
     
     // Start is called before the first frame update
     void Start()
     { 
+        movingSound = gameObject.AddComponent<AudioSource>();
+        movingSound.clip = movingSoundClip;
     }
 
     // Update is called once per frame
@@ -52,11 +56,10 @@ public class PacStudentController : MonoBehaviour
     }
     private IEnumerator Movement(Vector2 target)
     {
+        movingSound.Play();
         isLerping = true;
         Vector2 start = transform.position;
-        //Vector2 target = start + direction;
         float elapsed = 0;
-        //float duration = 0.01f;
         while(elapsed < 1f )
         {
             transform.position = Vector2.Lerp(start, target, elapsed);
