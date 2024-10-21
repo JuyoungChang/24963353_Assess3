@@ -53,7 +53,7 @@ public class CherryController : MonoBehaviour
 
     private Vector2 Opposite(Vector2 spawnPos)
     {
-        Vector2 t2d = new Vector2(target.transform.position.x, target.transform.position.y);
+        Vector2 t2d = new Vector2(target.transform.position.x, target.transform.position.y);//supposed to be target.transform.position, but not working somehow
         Vector2 oppositePosition = t2d + (t2d- spawnPos);  
         return oppositePosition;
     }
