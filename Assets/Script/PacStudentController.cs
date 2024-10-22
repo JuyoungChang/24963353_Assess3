@@ -15,12 +15,11 @@ public class PacStudentController : MonoBehaviour
     public AudioClip eatingClip;
     private Animator movingAnimataor;
     private ParticleSystem particle;
-    private ParticleSystem wallParticle;
     public UIManager ui;
     private Rigidbody2D rb;
     private Vector2 lastPos;
     public LayerMask wallLayerMask;
-    
+    private bool playOnce = false; 
     void Start()
     { 
         rb = GetComponent<Rigidbody2D>();
@@ -91,9 +90,16 @@ public class PacStudentController : MonoBehaviour
     {
         if(!WallInfront(lastInput))
         {
+            playOnce = false;
             return true;
-        }else{
-            wallCollide.Play();
+        }else
+        {
+            if(!playOnce){
+                ChangeColour(Color.white);
+                wallCollide.Play();
+                particle.Play();
+                playOnce = true;
+            }
             return false;
         }
     }
@@ -106,6 +112,7 @@ public class PacStudentController : MonoBehaviour
     private IEnumerator Movement(Vector2 target)
     {
         movingSound.Play();
+        ChangeColour(Color.black);
         particle.Play();
         isLerping = true;
         Vector2 start = transform.position;
@@ -130,16 +137,6 @@ public class PacStudentController : MonoBehaviour
         movingAnimataor.SetFloat("Vertical", vertical);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.CompareTag("Wall"))
-        {
-            
-            wallCollide.Play();
-            transform.position = lastPos; 
-        }
-    }
-
     private void Teleport()
     {
         Vector2 currentPos = gameObject.transform.position;
@@ -159,5 +156,11 @@ public class PacStudentController : MonoBehaviour
         {
             gameObject.transform.position = new Vector2(-11.5f, -10.5f);
         }
+    }
+
+    private void ChangeColour(Color newColor)
+    {
+        var main = particle.main;
+        main.startColor = newColor;
     }
 }
