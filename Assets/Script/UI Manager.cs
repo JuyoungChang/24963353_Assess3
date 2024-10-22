@@ -20,7 +20,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        ScoreText.text = "0";
+        //ScoreText.text = "0";
         ScoreUpdateText();
     }
 

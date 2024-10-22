@@ -1,8 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor.Callbacks;
 using UnityEngine;
+using UnityEngine.Tilemaps;
+using UnityEngine.UIElements;
 
 public class PacStudentController : MonoBehaviour
 {
@@ -15,10 +21,15 @@ public class PacStudentController : MonoBehaviour
     public AudioClip eatingClip;
     private Animator movingAnimataor;
     private ParticleSystem particle;
+    private UIManager ui;
+    private Rigidbody2D rb;
     
     // Start is called before the first frame update
     void Start()
     { 
+        ui = gameObject.GetComponent<UIManager>();
+        rb = GetComponent<Rigidbody2D>();
+
         movingSound = gameObject.AddComponent<AudioSource>();
         movingSound.clip = movingSoundClip;
 
@@ -36,6 +47,7 @@ public class PacStudentController : MonoBehaviour
     {
         InputMan();
         PacSutdentAnmimation();
+        Teleport();
     }
 
     void InputMan()
@@ -93,5 +105,34 @@ public class PacStudentController : MonoBehaviour
 
         movingAnimataor.SetFloat("Horizontal", horizontal);
         movingAnimataor.SetFloat("Vertical", vertical);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.CompareTag("Wall"))
+        {
+            isLerping = false;
+        }
+    }
+
+    private void Teleport()
+    {
+        Vector2 currentPos = gameObject.transform.position;
+        if(currentPos.y == -9.5f && currentPos.x < -11.5f)
+        {
+            gameObject.transform.position = new Vector2(15.5f, -9.5f);
+        }
+        else if(currentPos.y == -10.5f && currentPos.x < -11.5f)
+        {
+            gameObject.transform.position = new Vector2(15.5f, -10.5f);
+        }
+        else if(currentPos.y == -9.5f && currentPos.x > 15.5f)
+        {
+            gameObject.transform.position = new Vector2(-11.5f, -9.5f);
+        }
+        else if(currentPos.y == -10.5f && currentPos.x > 15.5f)
+        {
+            gameObject.transform.position = new Vector2(-11.5f, -10.5f);
+        }
     }
 }
