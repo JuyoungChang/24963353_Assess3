@@ -1,14 +1,6 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Data;
-
-using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-using UnityEngine.UIElements;
 
 public class PacStudentController : MonoBehaviour
 {
@@ -17,14 +9,18 @@ public class PacStudentController : MonoBehaviour
     public Vector2 currentInput;
     private AudioSource movingSound;
     public AudioClip movingSoundClip;
+    private AudioSource wallCollide;
+    public AudioClip wallCollideClip;
     private AudioSource eatingSound;
     public AudioClip eatingClip;
     private Animator movingAnimataor;
     private ParticleSystem particle;
+    private ParticleSystem wallParticle;
     public UIManager ui;
     private Rigidbody2D rb;
+    private Vector2 lastPos;
+    public LayerMask wallLayerMask;
     
-    // Start is called before the first frame update
     void Start()
     { 
         rb = GetComponent<Rigidbody2D>();
@@ -35,13 +31,15 @@ public class PacStudentController : MonoBehaviour
         eatingSound = gameObject.AddComponent<AudioSource>();
         eatingSound.clip = eatingClip;
 
+        wallCollide = gameObject.AddComponent<AudioSource>();
+        wallCollide.clip = wallCollideClip;
+
         movingAnimataor = GetComponent<Animator>();
         particle = GetComponent<ParticleSystem>();
 
         particle.Stop();
     }
 
-    // Update is called once per frame
     void Update()
     {
         InputMan();
@@ -51,32 +49,58 @@ public class PacStudentController : MonoBehaviour
 
     void InputMan()
     {
-        if(Input.GetKeyDown("w") && !isLerping)
+        if (Input.GetKeyDown("w") && !isLerping)
         {
             lastInput = Vector2.up;
-            StartMove();
+            if (CanMove())
+            {
+                StartMove();
+            } 
         }
-        if(Input.GetKeyDown("s") && !isLerping)
+        if (Input.GetKeyDown("s") && !isLerping)
         {
-           lastInput = Vector2.down;
-           StartMove();
+            lastInput = Vector2.down;
+            if (CanMove()) 
+            {
+                StartMove();
+            }
         }
-        if(Input.GetKeyDown("a") && !isLerping)
+        if (Input.GetKeyDown("a") && !isLerping)
         {
-           lastInput = Vector2.left;
-           StartMove();
+            lastInput = Vector2.left;
+            if (CanMove()) 
+            {
+                StartMove();
+            }
         }
-        if(Input.GetKeyDown("d") && !isLerping)
+        if (Input.GetKeyDown("d") && !isLerping)
         {
-           lastInput = Vector2.right;
-           StartMove();
+            lastInput = Vector2.right;
+            if (CanMove()) 
+            {
+                StartMove();
+            }
         }
     }
-
+    private bool WallInfront(Vector2 direction)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 1, wallLayerMask);
+        return hit.collider != null;
+    }
+    private bool CanMove()
+    {
+        if(!WallInfront(lastInput))
+        {
+            return true;
+        }else{
+            wallCollide.Play();
+            return false;
+        }
+    }
     private void StartMove()
     {
-        Vector2 position = transform.position;
-        Vector2 targetPosition = position + lastInput;
+        lastPos = transform.position;
+        Vector2 targetPosition = (Vector2)transform.position + lastInput;   
         StartCoroutine(Movement(targetPosition));
     }
     private IEnumerator Movement(Vector2 target)
@@ -106,20 +130,13 @@ public class PacStudentController : MonoBehaviour
         movingAnimataor.SetFloat("Vertical", vertical);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.collider.CompareTag("Wall"))
+        if(collision.CompareTag("Wall"))
         {
-            isLerping = false;
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.CompareTag("Cherry"))
-        {
-            ui.ScoreAdd(100);
-            Destroy(other.gameObject);
+            
+            wallCollide.Play();
+            transform.position = lastPos; 
         }
     }
 
