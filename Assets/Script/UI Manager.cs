@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField]private int score;
     [SerializeField]private TextMeshProUGUI scoreText;
-    private Text ScoreText;
+
     [SerializeField]private float timer;
     [SerializeField]private float ghostScaredDuration = 30f;
     [SerializeField]private int minutes;
@@ -20,7 +20,11 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        //ScoreText.text = "0";
+        if(scoreText == null)
+        {
+            return;
+        }
+        scoreText.text = "0";
         ScoreUpdateText();
     }
 
@@ -43,9 +47,9 @@ public class UIManager : MonoBehaviour
         ScoreUpdateText();
     }
 
-    private void ScoreUpdateText()
+    public void ScoreUpdateText()
     {
-        
+        scoreText.text = score.ToString();
     }
     public void InGameTimer()
     {

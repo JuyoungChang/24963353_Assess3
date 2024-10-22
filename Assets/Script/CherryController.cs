@@ -10,9 +10,11 @@ public class CherryController : MonoBehaviour
     public GameObject target ;
     public GameObject cherry;
     private float speed = 10f;
+    public UIManager ui;
     // Start is called before the first frame update
     void Start()
     {
+        
         StartCoroutine(SpawnMove());
     }
 
@@ -53,25 +55,33 @@ public class CherryController : MonoBehaviour
 
     private Vector2 Opposite(Vector2 spawnPos)
     {
-        Vector2 t2d = new Vector2(target.transform.position.x, target.transform.position.y);//supposed to be target.transform.position, but not working somehow
+        Vector2 t2d = new Vector2(target.transform.position.x, target.transform.position.y);
         Vector2 oppositePosition = t2d + (t2d- spawnPos);  
         return oppositePosition;
     }
 
     IEnumerator MoveCherry(GameObject cherryPrefab, Vector2 targetPos)
     {
+        
         Vector2 start = cherryPrefab.transform.position;
         float elapsed = 0;
         float distanceTraveled = Vector2.Distance(start, targetPos);
-        while (elapsed < distanceTraveled)
+        while (elapsed < distanceTraveled && cherryPrefab != null)
         {
             elapsed += Time.deltaTime * speed; 
             float t = elapsed / distanceTraveled; 
-
-            cherryPrefab.transform.position = Vector2.Lerp(start, targetPos, t);  
+            cherryPrefab.transform.position = Vector2.Lerp(start, targetPos, t);   
             yield return null;
         }
         Destroy(cherryPrefab);
-        yield return null;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            ui.ScoreAdd(100);
+            Destroy(gameObject);
+        }
     }
 }

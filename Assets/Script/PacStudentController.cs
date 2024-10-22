@@ -21,13 +21,12 @@ public class PacStudentController : MonoBehaviour
     public AudioClip eatingClip;
     private Animator movingAnimataor;
     private ParticleSystem particle;
-    private UIManager ui;
+    public UIManager ui;
     private Rigidbody2D rb;
     
     // Start is called before the first frame update
     void Start()
     { 
-        ui = gameObject.GetComponent<UIManager>();
         rb = GetComponent<Rigidbody2D>();
 
         movingSound = gameObject.AddComponent<AudioSource>();
@@ -112,6 +111,15 @@ public class PacStudentController : MonoBehaviour
         if(collision.collider.CompareTag("Wall"))
         {
             isLerping = false;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Cherry"))
+        {
+            ui.ScoreAdd(100);
+            Destroy(other.gameObject);
         }
     }
 
