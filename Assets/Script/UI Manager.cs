@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Tilemaps;
 public class UIManager : MonoBehaviour
 {
-    private int score;
+    [SerializeField]private int score;
+    [SerializeField]private TextMeshProUGUI scoreText;
     private Text ScoreText;
     [SerializeField]private float timer;
     [SerializeField]private float ghostScaredDuration = 30f;
@@ -15,9 +17,11 @@ public class UIManager : MonoBehaviour
     [SerializeField]private int mSeconds;
     [SerializeField]private bool countdown;
     [SerializeField]private TextMeshProUGUI timerText;
+
     void Start()
     {
-        //ScoreText.text = "Score:" + 0;
+        ScoreText.text = "0";
+        ScoreUpdateText();
     }
 
     // Update is called once per frame
@@ -33,11 +37,16 @@ public class UIManager : MonoBehaviour
     {
         SceneManager.LoadScene("StartScene");
     }
-    public void ScoreAdd()
+    public void ScoreAdd(int point)
     {
-        score++;
+        score += point;
+        ScoreUpdateText();
     }
 
+    private void ScoreUpdateText()
+    {
+        
+    }
     public void InGameTimer()
     {
         if(timerText == null)
